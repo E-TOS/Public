@@ -1,0 +1,13 @@
+Setup for Arduino serial connection for Python/Flask.
+
+Install arduino code "Pyduino" first, then setup port in code pyduino.py line 11.
+
+Test system, arduino with blink_pyduino.py, for system connection, before testing with analog_read_test.py.
+When done testing, and it works, test flask with hello_flask_world.py.
+When both arduino and flask test works, you can run pyduino_website.py
+
+Arduino Uno: photoresistor + 10kOhm resistor, 1 LED+Resistor (220Ohm - 1kOhm), usb.
+Python Requirements: Flask, Serial, request
+
+Link Python setup: https://www.instructables.com/id/Pyduino-Interfacing-Arduino-with-Python-through-se/
+Link Flask setup: https://www.instructables.com/id/Controlling-Arduino-with-python-based-web-API-No-p/
