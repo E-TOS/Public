@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+
+    <h2>PWM Reading {{ value }}!</h2>
+
+    <form action="http://localhost:5000/" method="post">
+        <p>LED Mode Switch</p>
+        <p><input type="submit" name="submit" value="LED On"> </p>
+        <p><input type="submit" name="submit" value="LED Off"> </p>
+        <p><input type="submit" name="submit" value="Sense Read"> </p>
+        <p><input type="submit" name="submit" value="Ctl On"> </p>
+        <p><input type="submit" name="submit" value="Ctl Off"> </p>
+        <p><input type="submit" name="submit" value="Power Off"> </p>
+        <p><input type="submit" name="submit" value="Power Half"> </p>
+        <p><input type="submit" name="submit" value="Power Max"> </p>
+    </form>
+
+
+<h1>The Output Element</h1>
+
+<form oninput="x.value=(parseInt(a.value)/parseInt(100))*paresInt(255)">
+	0<input type="range" id="a" value="50">255
+	= <output id = "coded" name="x" for="a"></output>
+</form>
+
+<h4> Testing variable </h4>
+
+<p><strong>Note:</strong> The output element is not supported in Edge 12 (or earlier). Use for control.</p>
+
+</body>
+</html>
